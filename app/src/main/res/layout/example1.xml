@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:layout_margin="10dp"
+        android:src= "@drawable/img_5967_2" />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="Thanh Tam"/>
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/txtName"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="37age"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/txtAge"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="1 Dao Duy Anh"/>
+
+    <LinearLayout
+        android:id="@+id/lnGender"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Gender"
+                android:textSize="30sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:text="Female"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="45dp"
+                android:checked="true"
+                android:text="Male"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTel"
+        android:layout_below="@+id/lnGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/editTel"
+        android:layout_below="@+id/lnGender"
+        android:layout_toRightOf="@+id/txtTel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/holo_green_dark"
+        android:inputType="phone"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/txtSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtTel"
+        android:layout_marginLeft="15dp"
+        android:text="Skill"
+        android:textSize="30sp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSkills"
+        android:text="English"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp" />
+    <CheckBox
+        android:id="@+id/checkboxJp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxEng"
+        android:text="Japan"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp" />
+    <CheckBox
+        android:id="@+id/checkboxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxJp"
+        android:text="Java"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkboxAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxJava"
+        android:text="Android"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"
+        android:layout_below="@+id/checkboxAndroid"
+        android:layout_margin="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputHobbi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lines="3"
+        />
+
+
+</RelativeLayout>
